@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="vista/css/styles.css">
 </head>
 <body>
     <div class="container">
@@ -65,6 +65,6 @@
     ?>    
     </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="vista/js/script.js"></script>
 </body>
 </html>
