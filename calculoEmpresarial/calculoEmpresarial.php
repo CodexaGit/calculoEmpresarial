@@ -43,28 +43,36 @@
             echo "<h2>El IMESI a pagar es (10%): $IMESI</h2>";
             $precioTotal = $precioVenta - $IMESI;
             echo "<h2>El monto descontando los impuestos es: $precioTotal</h2>";
+            echo "<h3>Explicacion: total - [($precioVenta X 10)/100]</h3>";
         }else if(isset($_POST['botonICOSA'])){
             $montoComision = $_POST['montoComision'];
             $ICOSA = $montoComision * 0.05;
             echo "<h2>El ICOSA a pagar es (5%): $ICOSA</h2>";
             $montoTotal = $montoComision - $ICOSA;
             echo "<h2>El monto descontando los impuestos es: $montoTotal</h2>";
+            echo "<h3>Explicacion: total - [($montoComision X 5)/100]</h3>";
         }else if(isset($_POST['botonPatrimonio'])){
             $patrimonioNeto = $_POST['patrimonioNeto'];
             $patrimonio = $patrimonioNeto * 0.02;
             echo "<h2>El impuesto al patrimonio a pagar es (2%): $patrimonio</h2>";
             $patrimonioTotal = $patrimonioNeto - $patrimonio;
             echo "<h2>El patrimonio descontando los impuestos es: $patrimonioTotal</h2>";
+            echo "<h3>Explicacion:  ($patrimonioNeto X 2)/100</h3>";
         }else if(isset($_POST['botonITP'])){
             $valorBien = $_POST['valorBien'];
             $ITP = $valorBien * 0.04;
             echo "<h2>El ITP a pagar es (4%): $ITP</h2>";
             $valorTotal = $valorBien - $ITP;
             echo "<h2>El monto de la comision descontando los impuestos es: $valorTotal</h2>";
+            echo "<h3>Explicacion: ($valorBien X 4)/100</h3>";
         }
     ?>    
     </div>
     </div>
+    <script src="vista/js/script.js"></script>
+</body>
+</html>
+
     <script src="vista/js/script.js"></script>
 </body>
 </html>
